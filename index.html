@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management System</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Event Management System</h2>
+
+      <!-- Create Event Form -->
+      <div id="event-form">
+        <h4>Create New Event</h4>
+        <form id="create-event-form">
+          <div class="form-group">
+            <label for="event-name">Event Name</label>
+            <input type="text" class="form-control" id="event-name" required />
+          </div>
+          <div class="form-group">
+            <label for="event-date">Event Date</label>
+            <input type="date" class="form-control" id="event-date" required />
+          </div>
+          <div class="form-group">
+            <label for="event-time">Event Time</label>
+            <input type="time" class="form-control" id="event-time" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Create Event</button>
+        </form>
+      </div>
+
+      <!-- List of Events -->
+      <div id="events-list" class="mt-5">
+        <h4>List of Events</h4>
+        <ul class="list-group" id="event-items"></ul>
+      </div>
+
+      <!-- RSVP Form -->
+      <div id="rsvp-form" class="mt-5">
+        <h4>RSVP for an Event</h4>
+        <form id="rsvp-event-form">
+          <div class="form-group">
+            <label for="rsvp-event">Select Event</label>
+            <select class="form-control" id="rsvp-event"></select>
+          </div>
+          <div class="form-group">
+            <label for="rsvp-email">Your Email</label>
+            <input type="email" class="form-control" id="rsvp-email" required />
+          </div>
+          <button type="submit" class="btn btn-success">RSVP</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
